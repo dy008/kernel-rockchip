@@ -47,6 +47,10 @@ dtb-$(CONFIG_ARCH_ROCKCHIP) += \
 	rk3588-nanopi6-rev0a.dtb \
 	rk3588-nanopi6-rev0b.dtb
 
+else ifeq ($(CONFIG_VENDOR_DY008),y)
+	
+	dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3588-mcam.dtb
+
 else
 
 dtb-$(CONFIG_ARCH_ROCKCHIP) += px30-evb.dtb
