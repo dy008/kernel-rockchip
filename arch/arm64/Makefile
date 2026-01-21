@@ -253,7 +253,7 @@ PHONY += resource.img nanopi4-images nanopi5-images nanopi6-images
 endif
 
 ifeq ($(CONFIG_VENDOR_DY008),y)
-DTBS := rk3588-mcam.dtb
+DTBS := rk3588*.dtb
 
 resource.img: dtbs $(LOGO) $(LOGO_KERNEL)
 	$(Q)$(srctree)/scripts/mkimg --dtb $(DTBS) --keep-dtb-name

@@ -49,7 +49,9 @@ dtb-$(CONFIG_ARCH_ROCKCHIP) += \
 
 else ifeq ($(CONFIG_VENDOR_DY008),y)
 	
-	dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3588-mcam.dtb
+	dtb-$(CONFIG_ARCH_ROCKCHIP) += \
+		rk3588-mcam.dtb \
+		rk3588s-sy2223.dtb
 
 else
 
